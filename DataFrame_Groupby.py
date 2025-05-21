@@ -24,7 +24,7 @@ mergeRatings = pd.merge(pd.merge(users, ratings), movies)
 
 
 def cloneDF(df):
-    a = pd.DataFrame(df.values.copy(), df.index.copy(), df.columns.copy())
+    a = pd.DataFrame(df.values.copy(), df.index.copy(), df.columns.copy()) df.index.copy(x)
     return a.apply(pd.to_numeric, errors = 'ignore')
 
 
